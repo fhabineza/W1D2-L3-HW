@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#BAC4C6"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="20dp"
+        app:srcCompat="@drawable/dd_logo" />
+
+    <TextView
+        android:id="@+id/textFood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:text=""
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextFood"
+        android:layout_width="232dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:hint="add new food"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/addFoodBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="80dp"
+        android:paddingRight="80dp"
+        android:background="#567378"
+        android:text="Add Food"
+        android:textColor="#BAC4C6"
+        android:onClick="addFood"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/btnDecide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="decideFood"
+        android:background="#567378"
+        android:textColor="#BAC4C6"
+        android:text="decide" />
+</LinearLayout>
